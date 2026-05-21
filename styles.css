@@ -1,0 +1,178 @@
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+html, body {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "SF Pro Text", Roboto, sans-serif;
+  background: #1c1c1e;
+  color: #1d1d1f;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.phone {
+  width: 100%;
+  max-width: 430px;
+  height: 100vh;
+  max-height: 932px;
+  background: #f3f0fb;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 500px) {
+  .phone { border-radius: 40px; height: 90vh; }
+}
+
+/* ---------- Hero / Purple header ---------- */
+.hero {
+  background: linear-gradient(180deg, #6d28d9 0%, #5b21b6 100%);
+  padding: 32px 20px 56px;
+  text-align: center;
+  color: white;
+  border-radius: 0 0 28px 28px;
+  position: relative;
+  z-index: 1;
+}
+
+.avatar-wrap {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.6);
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  background: #c8a37a;
+  transition: transform 0.15s ease;
+}
+
+.avatar-wrap:active .avatar { transform: scale(0.96); }
+
+.user-name {
+  margin-top: 14px;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.user-phone {
+  margin-top: 4px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.85);
+  letter-spacing: 1px;
+}
+
+/* ---------- Menu card ---------- */
+.menu-card {
+  background: white;
+  margin: -28px 14px 0;
+  border-radius: 14px;
+  padding: 6px 4px;
+  box-shadow: 0 4px 14px rgba(60, 40, 120, 0.06);
+  position: relative;
+  z-index: 2;
+}
+
+.menu-item {
+  width: 100%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1d1d1f;
+  text-align: left;
+}
+
+.menu-item:active { background: #f7f5fc; border-radius: 10px; }
+
+.mi-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  flex-shrink: 0;
+}
+
+.mi-label { flex: 1; }
+
+.mi-chevron {
+  display: inline-flex;
+  align-items: center;
+}
+
+.mi-divider {
+  height: 1px;
+  background: #eef0f4;
+  margin: 0 16px;
+}
+
+.menu-item.logout {
+  color: #ef4444;
+}
+
+/* ---------- Spacer (push nav to bottom) ---------- */
+.menu-card { margin-bottom: auto; }
+
+/* ---------- Bottom navigation ---------- */
+.bottom-nav {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 8px 18px;
+  box-shadow: 0 -2px 12px rgba(60, 40, 120, 0.05);
+  flex-shrink: 0;
+}
+
+.nav-item {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-family: inherit;
+  font-size: 11px;
+  color: #1d1d1f;
+  font-weight: 500;
+  padding: 4px 6px;
+  flex: 1;
+}
+
+.nav-item.active { color: #6d28d9; font-weight: 600; }
+
+.nav-center { transform: translateY(-14px); }
+
+.qr-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #6d28d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(109, 40, 217, 0.4);
+}
