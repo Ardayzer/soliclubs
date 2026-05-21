@@ -1,10 +1,10 @@
 // User database
 const users = [
-  { key: "isilay", name: "IŞILAY YUDUM YAŞA", phone: "000***85", img: "icons/isilay_pp.png" },
-  { key: "pelin",  name: "PELİN DURUKAN",     phone: "000***42", img: "icons/pelin_pp.png" },
-  { key: "harun",  name: "HARUN DOĞRU",       phone: "000***17", img: "icons/harun_pp.png" },
-  { key: "zeynep", name: "ZEYNEP KİBAR",      phone: "000***63", img: "icons/zeynep_pp.png" },
-  { key: "mert",   name: "MERT AKTAŞ",        phone: "000***08", img: "icons/mert_pp.png" },
+  { key: "isilay", name: "IŞILAY YUDUM YAŞA", phone: "000***85", img: "isilay_pp.png" },
+  { key: "pelin",  name: "PELİN DURUKAN",     phone: "000***42", img: "pelin_pp.png" },
+  { key: "harun",  name: "HARUN DOĞRU",       phone: "000***17", img: "harun_pp.png" },
+  { key: "zeynep", name: "ZEYNEP KİBAR",      phone: "000***63", img: "zeynep_pp.png" },
+  { key: "mert",   name: "MERT AKTAŞ",        phone: "000***08", img: "mert_pp.png" },
 ];
 
 const avatarImg = document.getElementById("avatarImg");
